@@ -27,7 +27,7 @@ namespace Stream_OSD
             guiStyle.fontSize = 20;
             guiStyle.normal.textColor = Color.white;
             bool inRoom = PhotonNetwork.InRoom;
-            GUI.Label(new Rect(15f, 25f, 120f, 60f), Player.Instance.name, guiStyle);
+            GUI.Label(new Rect(15f, 25f, 120f, 60f), PhotonNetwork.LocalPlayer.NickName, guiStyle);
             if (inRoom)
             {
                 GUI.Label(new Rect(900f, 10f, 200f, 20f), "Current Code:" + PhotonNetwork.CurrentRoom.Name, guiStyle);
