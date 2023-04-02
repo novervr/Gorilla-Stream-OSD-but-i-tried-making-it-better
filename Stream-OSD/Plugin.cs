@@ -30,16 +30,16 @@ namespace Stream_OSD
             GUI.Label(new Rect(15f, 25f, 120f, 60f), PhotonNetwork.LocalPlayer.NickName, guiStyle);
             if (inRoom)
             {
-                GUI.Label(new Rect(900f, 10f, 200f, 20f), "Current Code:" + PhotonNetwork.CurrentRoom.Name, guiStyle);
+                GUI.Label(new Rect(900f, 10f, 200f, 20f), "CURRENT CODE:" + PhotonNetwork.CurrentRoom.Name, guiStyle);
                
-               GUI.Label(new Rect(900f, 35f, 200f, 40f), "There are " + PhotonNetwork.CurrentRoom.PlayerCount.ToString() + " People", guiStyle);
-                GUI.Label(new Rect(1800f, 10f, 200f, 40f), "GameMode:", guiStyle);
+               GUI.Label(new Rect(900f, 35f, 200f, 40f), "THERE ARE " + PhotonNetwork.CurrentRoom.PlayerCount.ToString() + " People", guiStyle);
+                GUI.Label(new Rect(1800f, 10f, 200f, 40f), "GAMEMODE:", guiStyle);
                 GUI.Label(new Rect(1800f, 35f, 200f, 40f), GorillaGameManager.instance.GameMode(), guiStyle);
             }
             if (!inRoom)
             {
-                GUI.Label(new Rect(900f, 10f, 200f, 20f), "Not In a Code", guiStyle);
-                GUI.Label(new Rect(1800f, 10f, 200f, 40f), "GameMode:", guiStyle);
+                GUI.Label(new Rect(900f, 10f, 200f, 20f), "NOT IN CODE", guiStyle);
+                GUI.Label(new Rect(1800f, 10f, 200f, 40f), "GAMEMODE:", guiStyle);
             }
         }
     }
