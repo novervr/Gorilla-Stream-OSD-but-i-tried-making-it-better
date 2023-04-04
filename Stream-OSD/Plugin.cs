@@ -24,6 +24,7 @@ namespace Stream_OSD
         bool show;
         private void OnGUI()
         {
+            guiStyle.font = Utopium_OL;
             guiStyle.fontSize = 20;
             guiStyle.normal.textColor = Color.white;
             bool inRoom = PhotonNetwork.InRoom;
