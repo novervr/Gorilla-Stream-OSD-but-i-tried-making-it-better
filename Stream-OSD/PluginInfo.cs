@@ -5,7 +5,7 @@
     /// </summary>
     internal class PluginInfo
     {
-        public const string GUID = "com.graze.gorillatag.stream-osd";
+        public const string GUID = "com.graze.gorillatag.stream-osd-utopium";
         public const string Name = "Stream_OSD";
         public const string Version = "1.0.0";
     }
